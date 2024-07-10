@@ -1,0 +1,183 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul.list-unstyled li a {
+  text-decoration: none;
+  color: #6B7C94;
+  font-weight: 500;
+}
+
+ul.list-unstyled li a.success {
+  text-decoration: none;
+  color: #1dca5d;
+  font-weight: 500;
+}
+
+ul.list-unstyled li a.active {
+  text-decoration: none;
+  color: #05a6f0;
+  font-weight: 500;
+}
+
+ul.list-unstyled li span.badge {
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  padding: 7px 6px;
+  margin-right: 10px;
+  /* color: #6b7c94; */
+
+}
+
+.text-bg {
+  background-color: #6b7c94 !important;
+  /* background-color: #ffffff !important; */
+}
+
+.text-bg-success {
+  background-color: #1dca5d !important;
+}
+.text-bg-active {
+  background-color: #05a6f0 !important;
+}
+
+.bg-sidebar {
+  background-color: #f7f9fb;
+}
+.mainContainer {
+  overflow: hidden;
+}
+.height-100 {
+  min-height: 100vh;
+}
+
+.btn-background {
+  background-color: #05a6f0;
+}
+
+input{
+  border-radius: 6px;
+  border: 2px solid #E2E8F0;
+  outline: none;
+  padding: 4px 10px;
+  width: 100%;
+}
+
+label{
+  text-align: left;
+
+}
+
+.btn-color {
+  color: #ffffff;
+}
+
+.btnBadge {
+  width: 21px;
+  height: 21px;
+}
+.badgeLink {
+  font-weight: "500";
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7c94;
+}
+
+.color-primary {
+  color: #05a6f0;
+}
+.color-success {
+  color: #1dca5d;
+}
+
+
+.font-style-small {
+  font-weight: "400";
+  font-size: 12px;
+}
+
+.btn-closing-badge {
+  background-color: #f7f9fb;
+}
+
+.text-close {
+  color: #6b7c94;
+  border: 2px;
+  width: 8.33px;
+  height: 8.33px;
+  top: 5.83px;
+}
+
+
+
+.bottomViewContainer {
+  padding: 16px;
+  /* border: 1px solid #E2E8F0; */
+}
+
+
+
+.btn-outline {
+  border: 2px solid #05a6f0 !important;
+  color: #05a6f0;
+}
+
+.btn-outline:hover {
+  background-color: #05a6f0;
+  color: white;
+}
+
+
+.footerText{
+  color:#6b7c94;
+  font-size: 12px;
+}
+
+.borderTop{
+  border-top: 1px solid #E2E8F0;
+}
+.borderBottom{
+  border-bottom: 1px solid #E2E8F0;
+}
+.borderRight{
+  border-right: 1px solid #E2E8F0;
+}
+
+.fixed-sidebar{
+  position: fixed;
+  top: 58px;
+  bottom: 0px;
+  left: 0;
+}
+
+.mainContainer{
+  padding-bottom: 50px !important;
+}
+
+.btnPrev{
+  border-radius: 10px;
+  font-size: 14px;
+  border: 2px solid #05A6F0;
+  color: #05A6F0;
+}
+
+.btnNext{
+  border-radius: 10px;
+  font-size: 14px;
+  border: 2px solid #05A6F0;
+  color: #ffffff;
+  background-color: #05a6f0;
+}
+.btnAdd{
+  border-radius: 10px;
+  font-size: 14px;
+  border: 2px solid #05A6F0;
+  color: #ffffff;
+  background-color: #05a6f0;
+}
