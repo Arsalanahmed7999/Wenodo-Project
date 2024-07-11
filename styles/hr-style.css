@@ -253,6 +253,8 @@
   padding-bottom: 50px !important;
 }
 
+
+
 /*====== Padding-bottom css ends ======*/
 /*====== Padding-right css starts ======*/
 .p-r-0 {
@@ -7884,7 +7886,7 @@ p.data-attributes svg {
     .page-wrapper .page-header .header-wrapper {
         width: 100%;
         align-items: center;
-        padding: 0px 0px 0px 20px;
+        padding: 15px;
         position: relative;
         border-bottom: 1px solid #e2e8f0;
     }
@@ -8364,7 +8366,7 @@ p.data-attributes svg {
 }
     .page-wrapper .page-body-wrapper .page-body {
         min-height: calc(100vh - 136px);
-        margin-top: 60px;
+        margin-top: 70px;
         /*padding: 30px 15px 30px 15px;*/
         padding: 20px 0px 40px 0px;
         position: relative;
@@ -13326,6 +13328,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 ul.list-unstyled li a {
   text-decoration: none;
   color: #6B7C94;
@@ -13369,11 +13372,9 @@ ul.list-unstyled li span.badge {
 .bg-sidebar {
   background-color: #f7f9fb;
 }
-.mainContainer {
-  overflow: hidden;
-}
-.height-100 {
-  min-height: 100vh;
+
+.upperView{
+  min-height: 72vh;
 }
 
 .btn-background {
@@ -13388,10 +13389,6 @@ input{
   width: 100%;
 }
 
-label{
-  text-align: left;
-
-}
 
 .btn-color {
   color: #ffffff;
@@ -13437,12 +13434,18 @@ label{
 
 .bottomViewContainer {
   padding: 16px;
-  /* border: 1px solid #E2E8F0; */
 }
 
-/* .height-80 {
-  height: 90vh;
-} */
+.bottomView{
+  position: absolute;
+  width: 100%;
+  bottom: -250px;
+  left: -15px;
+  padding: 12px 0px;
+  
+}
+
+
 
 .btn-outline {
   border: 2px solid #05a6f0 !important;
@@ -13470,13 +13473,96 @@ label{
   border-right: 1px solid #E2E8F0;
 }
 
-.fixed-sidebar{
+.row .fixedSidebar{
   position: fixed;
   top: 0px;
   bottom: 0px;
   left: 0;
+  min-height: 100vh;
+  background-color: #f7f9fb;
+  border-right: 1px solid #E2E8F0;
+  margin-top: 60px;
+  padding-right: 10px;
+}
+
+.row .fixedSidebar ul{
+  margin: 20px 25px;
 }
 
 .mainContainer{
   padding-bottom: 50px !important;
 }
+
+
+
+
+.container form{
+  max-width: 70%;
+  margin: 0 auto;
+}
+.container form h1{
+  font-family: 'Montserrat';
+  color: #1E2432;
+  font-size: 24px;
+  font-weight: 600;
+}
+.container form label{
+  color: #1E2432;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.container form .texts{
+  margin-top: -13px;
+}
+.container form p{
+  color: #475569;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.badgeContainer{
+  background-color: #F7F9FB;
+  margin: 8px 0px;
+  border-radius: 6px;
+  padding: 6px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .badgeContainer span{
+  color: #1E2432;
+  font-size: 14px;
+  font-weight: 400;
+}
+.container .badgeContainer .badge i{
+  color: #6B7C94;
+  text-align: right;
+}
+
+.container form .row h6{
+  color: #1E2432;
+  font-size: 12px;
+  font-weight: 500;
+}
+.badgeContainerSuggestion{
+  background-color: #F7F9FB;
+  margin: 8px 0px;
+  border-radius: 6px;
+  padding: 6px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badgeContainerSuggestion span{
+  color: #1E2432;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+
+
