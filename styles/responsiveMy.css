@@ -1,0 +1,8 @@
+@media screen and (max-width: 1275px) {
+    .fixedSidebar{
+        display: none;
+    }
+    .page-body-wrapper .page-body .contentView{
+        width: 100%;
+    }
+  }
