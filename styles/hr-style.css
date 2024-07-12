@@ -13436,13 +13436,21 @@ input{
   padding: 16px;
 }
 
-.bottomView{
+/* .bottomView{
   position: absolute;
   width: 100%;
   bottom: -250px;
   left: -15px;
   padding: 12px 0px;
-  
+} */
+
+
+.bottomView{
+  width: 100%;
+  padding: 8px 0px;
+  margin-top: 130px;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 
@@ -13481,20 +13489,18 @@ input{
   min-height: 100vh;
   background-color: #f7f9fb;
   border-right: 1px solid #E2E8F0;
-  margin-top: 60px;
-  padding-right: 10px;
+  margin-top: 65px;
+  padding-right: 48px;
+  overflow: hidden;
 }
 
 .row .fixedSidebar ul{
-  margin: 20px 25px;
+  margin: 28px 25px;
 }
 
 .mainContainer{
   padding-bottom: 50px !important;
 }
-
-
-
 
 .container form{
   max-width: 70%;
@@ -13512,9 +13518,15 @@ input{
   font-weight: 500;
 }
 
+.container form label{
+  color: #1E2432;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 
 .container form .texts{
-  margin-top: -13px;
+  /* margin-top: -13px; */
 }
 .container form p{
   color: #475569;
@@ -13532,17 +13544,17 @@ input{
   align-items: center;
 }
 
-.container .badgeContainer span{
+.badgeContainer span{
   color: #1E2432;
   font-size: 14px;
   font-weight: 400;
 }
-.container .badgeContainer .badge i{
+.badgeContainer .badge i{
   color: #6B7C94;
   text-align: right;
 }
 
-.container form .row h6{
+form .row h6{
   color: #1E2432;
   font-size: 12px;
   font-weight: 500;
