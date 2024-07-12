@@ -1,22 +1,8 @@
-@media screen and (max-width: 1427px) {
-    .sidebar{
-        /* background-color: red !important; */
+@media screen and (max-width: 1275px) {
+    .fixedSidebar{
         display: none;
     }
-    .mainContainer{
-        /* background-color: orange !important; */
+    .page-body-wrapper .page-body .contentView{
         width: 100%;
-    }
-  }
-
-@media screen and (max-width: 360px) {
-    .mainContainer{
-        width: 100%;
-    }
-    .footerBar{
-        align-items: center;
-    }
-    .responsiveButtonsArea{
-        padding-bottom: 20px ;
     }
   }
