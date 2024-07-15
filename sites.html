@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wenodo</title>
+    <!-- Use only one version of Bootstrap -->
+    <link href="styles/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/fontawesome-pro-6.5.2-web/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="styles/fontawesome-pro-6.5.2-web/css/light.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="styles/style.css" /> -->
+
+    <link rel="stylesheet" href="styles/hr-style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <!--<link rel="stylesheet" href="styles/responsiveMy.css" />-->
+</head>
+
+<body>
+    <div class="page-wrapper compact-wrapper" id="pageWrapper" ng-controller="HRIndexController">
+        <!-- Page Header Start-->
+
+        <div class="page-header">
+            <div class="header-wrapper row">
+                <div class="header-logo-wrapper col-auto p-0">
+                    <div class="logo-wrapper">
+                        <a class="navbar-brand" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.08" />
+                                <rect width="32" height="32" rx="6" fill="#05A6F0" />
+                                <path
+                                    d="M18.6968 20.0119L18.1447 21.6075H15.5867L13.3543 15.1623L11.1219 21.6075H8.56389L5 11.3158H7.78616L9.93115 18.0353L12.0495 11.3953L12.0753 11.3125H14.6333L14.6591 11.3953L16.7783 18.0353L17.0431 17.2068L17.5427 15.6502C17.4661 16.1659 17.46 16.6895 17.5244 17.2068C17.648 18.2315 18.0537 19.2022 18.6968 20.0119Z"
+                                    fill="white" />
+                                <path
+                                    d="M20.5604 11.3203H18.9217L18.0957 13.91C18.6939 12.7208 19.7174 11.7971 20.9651 11.3203H20.5604Z"
+                                    fill="white" />
+                                <path
+                                    d="M23.9923 15.2689H20.3435L19.9671 16.355L19.6698 17.2133L18.6973 20.0209C19.6623 21.2304 21.112 22 22.7399 22C24.8325 22 26.6402 20.7234 27.4862 18.8743L24.9765 18.3308C24.4961 19.0764 23.6967 19.5627 22.7924 19.5627C21.4876 19.5627 20.4018 18.5504 20.1753 17.2133H27.9559C28.0368 16.5649 28.007 15.9075 27.8676 15.2689C27.3322 12.8217 25.2397 11 22.7366 11C22.4175 10.9997 22.099 11.03 21.7857 11.0903L21.7024 11.3206L20.7157 14.1704C20.9662 13.8913 21.2731 13.6677 21.6163 13.5144C21.9595 13.3611 22.3313 13.2815 22.7075 13.2807C23.9265 13.2807 24.9607 14.1091 25.3196 15.2615L23.9923 15.2689Z"
+                                    fill="#CDEDFC" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends -->
+
+        <!-- Toggle Button Starts here -->
+
+        <!-- Toggle Button Ends here -->
+
+        <div class="page-body-wrapper">
+            <div class="page-body bg-white">
+                <div class="row">
+                    <!-- sidebar -->
+                    <div class="col-xxl-2 col-ed-2 col-xl-2">
+                        <div class="fixedSidebar">
+                            <ul class="list-unstyled">
+                                <li class="my-3">
+                                    <span class="badge text-bg-success">
+                                        <i class="fa-light fa-check fa-sm"></i>
+                                    </span>
+                                    <a class="success" href="/basicDetails.html">Basic Details</a>
+                                </li>
+                                <li class="my-3">
+                                    <span class="badge text-bg-active">
+                                        2
+                                    </span>
+                                    <a class="active" href="/sites.html">Enter Sites</a>
+                                </li>
+                                <li class="my-3">
+                                    <span class="badge badge-white text-bg-pending">
+                                        3
+                                    </span>
+                                    <a class="pending" href="/departments.html">Enter Departments</a>
+                                </li>
+                                <li class="my-3">
+                                    <span class="badge badge-white text-bg-pending">
+                                        4
+                                    </span>
+                                    <a class="pending" href="/positions.html">Enter Positions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- content side -->
+                    <div class="col-xxl-10 col-ed-10 col-xl-10">
+                        <div class="container">
+                            <form>
+
+                                <div class="row">
+                                    <div class="col-xxl col-ed col-xl">
+                                        <h3>Add Sites</h3>
+                                    </div>
+                                    <div class="col-xxl-auto col-ed-auto col-xl-auto">
+                                        <button class="btn btn-primary">Add New Legal Entity</button>
+                                    </div>
+
+                                    <div class="col-xxl-12 col-ed-12 col-xl-12">
+                                        <div class="myContainer">
+                                            <div class="accordion" id="accordionExample">
+
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                aria-expanded="true" aria-controls="collapseOne">
+                                                                Accordion Item
+                                                                <div class="ms-auto">
+                                                                    <!-- <i class="fa-light fa-pen fa-lg"></i> -->
+                                                                    <a href="" type="button" class="btn btn-light">Add
+                                                                        Sites</a>
+                                                                </div>
+                                                            </button>
+                                                        </h2>
+                                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+
+                                                                <div class="row">
+                                                                    <div class="col-xxl-12 col-ed-12 col-xl-12">
+                                                                        <div class="my-2">
+                                                                            <label>Site Name</label>
+                                                                            <select>
+                                                                                <option value="Site-003">Site-003
+                                                                                </option>
+                                                                                <option value="Site-001">Site-001
+                                                                                </option>
+                                                                                <option value="Site-002">Site-002
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-6 col-ed-6 col-xl-6">
+                                                                        <div class="my-2">
+                                                                            <label>Address 1</label>
+                                                                            <input type="text"
+                                                                                placeholder="35 St Martin's Street">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-6 col-ed-6 col-xl-6">
+                                                                        <div class="my-2">
+                                                                            <label>Address 2</label>
+                                                                            <input type="text"
+                                                                                placeholder="35 St Martin's Street">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-4 col-ed-4 col-xl-4">
+                                                                        <div class="my-2">
+                                                                            <label>City </label>
+                                                                            <input type="text"
+                                                                                placeholder="35 St Martin's Street">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-4 col-ed-4 col-xl-4">
+                                                                        <div class="my-2">
+                                                                            <label>Country </label>
+                                                                            <input type="text"
+                                                                                placeholder="35 St Martin's Street">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-4 col-ed-4 col-xl-4">
+                                                                        <div class="my-2">
+                                                                            <label>Post Code</label>
+                                                                            <input type="text"
+                                                                                placeholder="35 St Martin's Street">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xxl-12 col-ed-12 col-xl-12">
+                                                                        <div class="me-auto">
+                                                                            <button class="btn btn-primary">
+                                                                                Save
+                                                                            </button>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+
+                                                                </div>
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                            </form>
+                        </div>
+
+
+                        <!-- previous next buttons -->
+                        <div class="col-xxl-12 col-xl-12 col-ed-12">
+                            <div class="bottomView text-end border-top">
+                                <button class="btn btn-light my-2 mx-2">Previous</button>
+                                <button class="btn btn-primary my-2 mx-2">Next</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer side -->
+            <footer class="footer footer-fix">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 footer-copyright">
+                            <p class="mb-0">
+                                Powered by
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="32" height="32" rx="8" fill="white" fill-opacity="0.08" />
+                                    <rect width="32" height="32" rx="6" fill="#05A6F0" />
+                                    <path
+                                        d="M18.6968 20.0119L18.1447 21.6075H15.5867L13.3543 15.1623L11.1219 21.6075H8.56389L5 11.3158H7.78616L9.93115 18.0353L12.0495 11.3953L12.0753 11.3125H14.6333L14.6591 11.3953L16.7783 18.0353L17.0431 17.2068L17.5427 15.6502C17.4661 16.1659 17.46 16.6895 17.5244 17.2068C17.648 18.2315 18.0537 19.2022 18.6968 20.0119Z"
+                                        fill="white" />
+                                    <path
+                                        d="M20.5604 11.3203H18.9217L18.0957 13.91C18.6939 12.7208 19.7174 11.7971 20.9651 11.3203H20.5604Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.9923 15.2689H20.3435L19.9671 16.355L19.6698 17.2133L18.6973 20.0209C19.6623 21.2304 21.112 22 22.7399 22C24.8325 22 26.6402 20.7234 27.4862 18.8743L24.9765 18.3308C24.4961 19.0764 23.6967 19.5627 22.7924 19.5627C21.4876 19.5627 20.4018 18.5504 20.1753 17.2133H27.9559C28.0368 16.5649 28.007 15.9075 27.8676 15.2689C27.3322 12.8217 25.2397 11 22.7366 11C22.4175 10.9997 22.099 11.03 21.7857 11.0903L21.7024 11.3206L20.7157 14.1704C20.9662 13.8913 21.2731 13.6677 21.6163 13.5144C21.9595 13.3611 22.3313 13.2815 22.7075 13.2807C23.9265 13.2807 24.9607 14.1091 25.3196 15.2615L23.9923 15.2689Z"
+                                        fill="#CDEDFC" />
+                                </svg>
+                            </p>
+                        </div>
+                        <div class="col-md-6 footer-copyright text-end">
+                            <a href="https://www.wenodo.com/privacy-policy" target="_blank" class="mx-4">Privacy
+                                Policy</a>
+                            <a href="https://www.wenodo.com/contact-us" target="_blank">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="styles/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
